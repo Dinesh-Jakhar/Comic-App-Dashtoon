@@ -1,0 +1,253 @@
+
+.comic-generator {
+    width: 900px;
+    margin: auto;
+    padding: 30px;
+    gap: 10px;
+    border-radius: 15px;
+    border: 2px solid #ddd;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../Images/17377.jpg');
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.panel {
+    flex: 1;
+    width: 100%;
+    color: white;
+}
+
+
+.annotations {
+    border-radius: 16px;
+    width: 30%;
+    padding-bottom: 5px;
+    background-color: rgb(205, 168, 98);
+
+}
+
+textarea:hover,
+input:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+
+    border-radius: 15px;
+
+
+
+    box-sizing: border-box;
+
+    transition: border-color 0.3s ease-in-out;
+
+    resize: none;
+    background-color: wheat;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comic-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.comic-panel {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+
+
+textarea:focus {
+    outline: none;
+    border-color: #0c0c0c;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #5cace1;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 12px;
+
+}
+
+button:hover {
+    background-color: #357fa8;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.comic-panel img {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+
+/* .speech {
+    font-size: 1.1em;
+
+
+    color: #fff;
+    background: #a53d38;
+
+
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+
+
+}
+
+
+.speech::after {
+
+    content: "";
+    border: 20px solid transparent;
+    position: absolute;
+}
+
+.bottom.speech::after {
+    border-top-color: #a53d38;
+    border-bottom: 0;
+    bottom: -20px;
+    left: 50%;
+    margin-left: -20px;
+}
+
+
+.top.speech::after {
+
+    border-bottom-color: #a53d38;
+    border-top: 0;
+    top: -20px;
+    left: 50%;
+    margin-left: -20px;
+}
+
+
+.left.speech::after {
+
+    border-right-color: #a53d38;
+    border-left: 0;
+    left: -20px;
+    top: 50%;
+    margin-top: -20px;
+}
+
+
+.right.speech::after {
+    border-left-color: #a53d38;
+    border-right: 0;
+    right: -20px;
+    top: 50%;
+    margin-top: -20px;
+} */
+
+* {
+    font-family: arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1600172454132-ada7faa101cf?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NjU0ODA0Mg&ixlib=rb-1.2.1&q=85);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+
+.widget-wrap {
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+#talk {
+    width: 100%;
+    height: 120px;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 512 512" width="100" xmlns="http://www.w3.org/2000/svg"><path d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z" /></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#code-boxx {
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+#code-boxx a {
+    display: inline-block;
+    padding: 5px;
+
+    text-decoration: none;
+    background: #b90a0a;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .comic-generator {
+        width: 100%;
+        max-width: none;
+        padding: 15px;
+        border-radius: 0;
+        border: 1px solid #ddd;
+    }
+
+    .comic-generator img {
+        max-width: 100%;
+
+    }
+
+    .comic-panel img {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+}

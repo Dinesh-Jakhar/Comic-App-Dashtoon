@@ -1,0 +1,9 @@
+.comic-panel img {
+    filter: grayscale(100%);
+    transition: filter 0.4s ease-in-out;
+    
+}
+
+.comic-panel img:hover {
+    filter: grayscale(0%);
+}
